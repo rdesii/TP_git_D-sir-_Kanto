@@ -5,3 +5,6 @@ def ajoute_tache(task_dict,nouvelle_tache, description):
 def supprimer_tache(task_dict, tache_a_supprimer):
 	if tache_a_supprimer in task_dict:
 		del task_dict[tache_a_supprimer]
+def marquer_tache_termine(task_dict,tache):
+	if tache in task_dict:
+		task_dict[tache]+= " - terminer"
